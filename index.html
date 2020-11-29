@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>David Jin's Portfolio</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+     <ul>
+       <li><a class="active" href="index.html">Home</a></li>
+       <li><a href="bio.html">Bio</a></li>
+       <li><a target="_blank" href="images/DavidJinInternshipResume.pdf">Resume</a></li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+
+     <!-- MAIN (Center website) -->
+     <div class="main">
+
+     <h1>David Jin's Portfolio</h1>
+     <hr>
+
+     <h2>Showcase Projects</h2>
+
+     <!-- Portfolio Gallery Grid -->
+     <div class="row">
+       <div class="column">
+         <div class="content">
+           <button id="open" class="button">
+             <div class="container">
+               <img src="images/FPL.png" alt="FPL Predictor" class="image">
+               <div class="overlay">
+                 <div class="text">Fantasy Premier League Machine Learning Tool</div>
+               </div>
+             </div>
+           </button>
+           <div id="projectDescription" class="modal">
+             <!-- Modal content -->
+             <div class="modal-content">
+               <button id="close" class="close">&times;</button>
+               <div class="group">
+                 <p>A linear regression machine learning model for the English Premier League.
+                   It learns from training set considering factors including opponent attack/defense
+                   difficulty, home/away, and player performance. It subsequently predicts player
+                   scores for future matches based on these factors and can generate the optimal
+                   fantasy squad by solving the resulting knapsack problem.
+                   <a href="https://github.com/saminkumra/FantasyPremierLeague" target="_blank">
+                     Click here to view the Github
+                   </a>.
+                 </p>
+                 <div class="group">
+                   <h3>Example: Analysis of Jamie Vardy</h3>
+                   <img src="images/JamieVardyGraph.png" alt="Jamie Vardy training data">
+                   <img src="images/JamieVardyNextFixtures.png" alt="Jamie Vardy projected points" class="right">
+                 </div>
+               </div>
+             </div>
+           </div>
+           <h3>FPL Predictor</h3>
+         </div>
+       </div>
+
+       <div class="column">
+         <div class="content">
+           <button class="button">
+             <a href="https://github.com/DJin24/tic-tac-toe" target="_blank">
+               <div class="container">
+                 <img src="images/tictactoe.png" alt="Tic Tac Toe v AI" class="image">
+                 <div class="overlay">
+                   <div class="text">Tic Tac Toe game vs Minimax Artificial Intelligence</div>
+                 </div>
+               </div>
+             </a>
+           </button>
+           <h3>Tic Tac Toe</h3>
+         </div>
+       </div>
+
+       <div class="column">
+         <div class="content">
+           <button class="button">
+             <a href="https://github.com/sethdmay/cats.ai" target="_blank">
+               <div class="container">
+                 <img src="images/catsai.jpeg" alt="cats.ai" class="image">
+                 <div class="overlay">
+                   <div class="text">Personal sports technique coach using OpenPose</div>
+                 </div>
+               </div>
+             </a>
+           </button>
+           <h3>cats.ai</h3>
+         </div>
+       </div>
+
+     <!-- END MAIN -->
+     </div>
+   </body>
+   <script src="modal.js"></script>
+</html>

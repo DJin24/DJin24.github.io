@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>David Jin's Portfolio</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="bio.html">Bio</a></li>
+       <li><a target="_blank" href="images/DavidJinInternshipResume.pdf">Resume</a></li>
+       <li><a class="active" href="contact.html">Contact</a></li>
+     </ul>
+
+     <!-- MAIN (Center website) -->
+     <div class="main">
+
+     <h1>Get in Touch</h1>
+     <hr>
+
+     <div class="group">
+       <div class="contactinfo">
+         <h3>Contact Details</h3>
+         <p>David Jin<br>
+           817 N County Line Rd<br>
+           Hinsdale, IL 60521<br>
+           630-303-7965<br>
+           davidjin2022@u.northwestern.edu
+         </p>
+       </div>
+
+       <form>
+         <label for="fname">First name:</label><br>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="lname">Last name:</label><br>
+         <input type="text" id="lname" name="lname"><br>
+         <label for="email">Email address:</label><br>
+         <input type="email" id="email" name="email"><br>
+         <label for="phone">Phone number:</label><br>
+         <input type="number" id="phone" name="phone"><br>
+         <p>Reason(s) for enquiry:</p>
+         <input type="checkbox" id="q1" name="q1" value="professional">
+         <label for="q1"> Make a professional enquiry</label><br>
+         <input type="checkbox" id="q2" name="q2" value="general">
+         <label for="q2"> General question for David</label><br>
+         <input type="checkbox" id="q3" name="q3" value="connect">
+         <label for="q3"> Let's connect!</label><br><br>
+         <label for="message">Message:</label><br>
+         <textarea name="message"></textarea><br><br>
+         <input type="submit" value="Submit">
+         <input type="reset">
+       </form>
+     </div>
+     <!-- END MAIN -->
+     </div>
+   </body>
+</html>
