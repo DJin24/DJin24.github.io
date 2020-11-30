@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("images/ocean.jpg");
+  background-image: url("images/night.jpg");
   background-size: cover;
   padding: 20px;
   font-family: Arial;
@@ -11,9 +11,13 @@ body {
 
 /* Center website */
 .main {
-  background-color: gainsboro;
+  background-color: rgba(220, 220, 220, 0.8);
   padding: 20px;
   margin: auto;
+}
+
+hr {
+  border: 1px solid rgba(65, 105, 225, 0.8);
 }
 
 h1 {
@@ -28,9 +32,11 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: royalblue;
+  opacity: 0.8;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 li {
@@ -54,9 +60,30 @@ li a:hover:not(.active) {
   background-color: mediumpurple;
 }
 
-object {
+.intro {
   width: 100%;
-  height: 1000px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+.intro h1 {
+  color: lightgrey;
+  font-size: 100px;
+  font-weight: bold;
+  word-break: keep-all;
+  margin-bottom: 0;
+}
+
+.intro p {
+  font-family: Georgia, serif;
+  color: lightslategrey;
+  font-size: 20px;
+}
+
+.emphasis {
+  color: lightgrey;
 }
 
 .row {
@@ -90,7 +117,7 @@ object {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -182,7 +209,12 @@ form {
   width: 80%;
 }
 
+.modal-content p {
+  color: black;
+}
+
 .modal-content h3 {
+  color: black;
   margin-top: 5%;
   text-align: center;
 }
