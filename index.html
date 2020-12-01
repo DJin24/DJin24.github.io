@@ -12,13 +12,14 @@
        <li><a href="contact.html">Contact</a></li>
      </ul>
 
+     <!-- Intro section overlayed over background image -->
      <div class="intro">
        <h1>Hi, I'm David Jin.</h1>
        <p>A Chicago-based <span class="emphasis">Developer and Student at Northwestern</span>.<br>
        I enjoy solving problems and designing solutions. Check out some of my projects below!</p>
      </div>
 
-     <!-- MAIN (Center website)-->
+     <!-- Main section of website with grey semi-transparent background -->
      <div class="main">
 
      <h1>Portfolio</h1>
@@ -26,20 +27,23 @@
 
      <h2>Showcase Projects</h2>
 
-     <!-- Portfolio Gallery Grid -->
+     <!-- Grid for projects -->
      <div class="row">
        <div class="column">
+         <!-- Each project is contained in its own "content" div -->
          <div class="content">
+           <!-- Button to open modal content -->
            <button id="open" class="button">
              <div class="container">
                <img src="images/FPL.png" alt="FPL Predictor" class="image">
+               <!-- Descriptive overlay that appears upon hover -->
                <div class="overlay">
                  <div class="text">Fantasy Premier League Machine Learning Tool</div>
                </div>
              </div>
            </button>
            <div id="projectDescription" class="modal">
-             <!-- Modal content -->
+             <!-- Modal content popup when clicked -->
              <div class="modal-content">
                <button id="close" class="close">&times;</button>
                <div class="group">
@@ -96,7 +100,7 @@
          </div>
        </div>
 
-     <!-- END MAIN-->
+     <!-- End Main-->
      </div>
    </body>
    <script src="modal.js"></script>

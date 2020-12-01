@@ -11,7 +11,7 @@ open.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <button> (x), close the modal
 close.onclick = function() {
   modal.style.display = "none";
 }
